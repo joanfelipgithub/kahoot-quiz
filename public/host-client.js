@@ -27,6 +27,12 @@ const elements = {
     answerBars: document.getElementById('answerBars'),
     answeredPlayersList: document.getElementById('answeredPlayersList'),
     
+    // Anti-cheat
+    statsPanel: document.getElementById('statsPanel'),
+    antiCheatMessage: document.getElementById('antiCheatMessage'),
+    answeredCountCheat: document.getElementById('answeredCountCheat'),
+    totalPlayersCheat: document.getElementById('totalPlayersCheat'),
+    
     // Reveal
     revealQuestionText: document.getElementById('revealQuestionText'),
     revealAnswersPreview: document.getElementById('revealAnswersPreview'),
@@ -105,7 +111,8 @@ function updateAnsweredPlayersList() {
         .forEach(player => {
             const item = document.createElement('div');
             item.className = 'answered-player';
-            item.textContent = `${player.name} - ${player.answer ? player.answer.toUpperCase() : '?'}`;
+            // NO mostrem la resposta per evitar còpies!
+            item.textContent = `${player.name} ✓`;
             elements.answeredPlayersList.appendChild(item);
         });
 }
@@ -218,7 +225,12 @@ socket.on('question', (data) => {
         elements.answersPreview.appendChild(answerDiv);
     });
     
-    // Initialize answer bars
+    // ANTI-CHEAT: Amagar estadístiques durant la pregunta
+    elements.statsPanel.classList.add('hidden');
+    elements.antiCheatMessage.classList.add('visible');
+    elements.totalPlayersCheat.textContent = Object.keys(hostState.players).length;
+    
+    // Initialize answer bars (però no es mostren)
     updateAnswerDistribution();
     updateAnsweredPlayersList();
     
@@ -241,9 +253,10 @@ socket.on('player_answered', (data) => {
         hostState.answerDistribution[data.answer]++;
     }
     
-    // Update displays
+    // Update displays (però ocultes!)
     const answeredCount = Object.values(hostState.players).filter(p => p.answered).length;
     elements.answeredCount.textContent = answeredCount;
+    elements.answeredCountCheat.textContent = answeredCount; // Mostrar només el comptador
     
     updateAnswerDistribution();
     updateAnsweredPlayersList();
@@ -254,6 +267,10 @@ socket.on('reveal', (data) => {
     stopTimer();
     
     showScreen('reveal');
+    
+    // ANTI-CHEAT: Mostrar estadístiques de nou!
+    elements.statsPanel.classList.remove('hidden');
+    elements.antiCheatMessage.classList.remove('visible');
     
     // Display question and answers with correct highlighted
     elements.revealQuestionText.textContent = hostState.currentQuestion.question;
