@@ -1,59 +1,299 @@
-01(15s) Which is the capital of France?
+01(5s) Quina és la capital de França?
 a. Madrid
-b. Barcelona
-c. Rome
-*d. Paris
+b. Berlín
+c. Roma
+*d. París
 
-02(20s) What is the largest planet in our solar system?
-a. Earth
-b. Mars
-*c. Jupiter
+02(5s) Quin és el planeta més gran del sistema solar?
+a. La Terra
+b. Mart
+*c. Júpiter
 d. Saturn
 
-03(15s) Who painted the Mona Lisa?
-a. Vincent van Gogh
+03(5s) Qui va pintar la "Mona Lisa"?
+*a. Leonardo da Vinci
 b. Pablo Picasso
-*c. Leonardo da Vinci
-d. Michelangelo
+c. Vincent van Gogh
+d. Salvador Dalí
 
-04(20s) What is the speed of light?
-a. 150,000 km/s
-b. 200,000 km/s
-*c. 300,000 km/s
-d. 400,000 km/s
+04(5s) Quin riu passa per la ciutat de Londres?
+a. Sena
+b. Ebre
+*c. Tàmesi
+d. Danubi
 
-05(15s) Which programming language is known as the language of the web?
-a. Python
-b. Java
-*c. JavaScript
-d. C++
+05(5s) Quants continents hi ha a la Terra?
+a. 4
+*b. 6
+c. 8
+d. 10
 
-06(20s) What year did World War II end?
-a. 1943
-*b. 1945
-c. 1946
-d. 1947
+06(5s) Quin és l'oceà més gran del món?
+a. Atlàntic
+b. Índic
+*c. Pacífic
+d. Àrtic
 
-07(15s) Which element has the chemical symbol 'O'?
-a. Gold
-*b. Oxygen
-c. Silver
-d. Iron
+07(5s) En quin any va arribar l'home a la Lluna per primera vegada?
+a. 1959
+*b. 1969
+c. 1979
+d. 1989
 
-08(20s) Who wrote "Romeo and Juliet"?
-*a. William Shakespeare
-b. Charles Dickens
-c. Mark Twain
-d. Jane Austen
+08(5s) Quin gas necessitem respirar per sobreviure?
+a. Nitrogen
+b. Diòxid de carboni
+c. Heli
+*d. Oxigen
 
-09(15s) What is the largest ocean on Earth?
-a. Atlantic Ocean
-b. Indian Ocean
-c. Arctic Ocean
-*d. Pacific Ocean
+09(5s) Qui va escriure "El Quixot"?
+*a. Miguel de Cervantes
+b. Àngel Guimerà
+c. Mercè Rodoreda
+d. Federico García Lorca
 
-10(20s) In which year was the first iPhone released?
-a. 2005
-*b. 2007
-c. 2009
-d. 2010
+10(5s) Quina és la fórmula química de l'aigua?
+a. CO2
+*b. H2O
+c. NaCl
+d. O2
+
+11(5s) Quin país té forma de bota?
+a. Espanya
+b. Grècia
+*c. Itàlia
+d. Portugal
+
+12(5s) Quin és el metall que és líquid a temperatura ambient?
+a. Or
+b. Ferro
+c. Coure
+*d. Mercuri
+
+13(5s) Qui va descobrir Amèrica l'any 1492?
+a. Magallanes
+*b. Cristòfor Colom
+c. Marco Polo
+d. James Cook
+
+14(5s) Com es diu el resultat d'una multiplicació?
+*a. Producte
+b. Suma
+c. Quocient
+d. Diferència
+
+15(5s) Quin és l'animal terrestre més ràpid del món?
+a. Lleó
+b. Cavall
+*c. Guepard
+d. Estruç
+
+16(5s) Quina és la muntanya més alta del món?
+a. K2
+*b. Everest
+c. Aneto
+d. Mont Blanc
+
+17(5s) Quants costats té un hexàgon?
+a. 5
+*b. 6
+c. 7
+d. 8
+
+18(5s) En quin continent es troba Egipte?
+a. Àsia
+*b. Àfrica
+c. Europa
+d. Oceania
+
+19(5s) Qui va inventar la bombeta?
+a. Isaac Newton
+b. Albert Einstein
+*c. Thomas Edison
+d. Nikola Tesla
+
+20(5s) Quin color s'obté barrejant blau i groc?
+a. Lila
+b. Taronja
+*c. Verd
+d. Marró
+
+21(5s) Quina és la capital d'Espanya?
+*a. Madrid
+b. Barcelona
+c. València
+d. Sevilla
+
+22(5s) Quin òrgan del cos bombardeja la sang?
+a. Pulmons
+b. Cervell
+*c. Cor
+d. Fetge
+
+23(5s) Com es diu la línia imaginària que divideix la Terra en nord i sud?
+a. Meridià de Greenwich
+*b. Equador
+c. Tròpic de Càncer
+d. Eix polar
+
+24(5s) Quina llengua es parla al Brasil?
+a. Espanyol
+*b. Portuguès
+c. Francès
+d. Anglès
+
+25(5s) Quin és el llibre sagrat de l'Islam?
+a. La Bíblia
+b. La Torà
+*c. L'Alcorà
+d. El Talmud
+
+26(5s) Quants minuts té una hora i mitja?
+a. 60
+*b. 90
+c. 100
+d. 120
+
+27(5s) Qui va ser el líder del moviment de resistència no violenta a l'Índia?
+*a. Mahatma Gandhi
+b. Nelson Mandela
+c. Martin Luther King
+d. Dalai Lama
+
+28(5s) Quina és la capital de Catalunya?
+a. Girona
+b. Tarragona
+c. Lleida
+*d. Barcelona
+
+29(5s) Quin és el mineral més dur que existeix?
+a. Or
+b. Grafit
+*c. Diamant
+d. Quars
+
+30(5s) Com es diuen els animals que mengen de tot?
+a. Herbívors
+b. Carnívors
+*c. Omnívors
+d. Insectívors
+
+31(5s) Quin és l'edifici més famós d'Antoni Gaudí a Barcelona?
+*a. Sagrada Família
+b. Casa Blanca
+c. Torre Eiffel
+d. El Vaticà
+
+32(5s) Quants ossos té aproximadament el cos humà adult?
+a. 106
+*b. 206
+c. 306
+d. 406
+
+33(5s) En quina guerra es va utilitzar per primera vegada la bomba atòmica?
+a. Primera Guerra Mundial
+*b. Segona Guerra Mundial
+c. Guerra de Vietnam
+d. Guerra Civil Espanyola
+
+34(5s) Com es diu el procés pel qual les plantes fabriquen el seu aliment?
+a. Respiració
+*b. Fotosíntesi
+c. Digestió
+d. Transpiració
+
+35(5s) Qui va pintar el quadre "El Guernica"?
+a. Joan Miró
+b. Salvador Dalí
+*c. Pablo Picasso
+d. Velázquez
+
+36(5s) Quants anys té un segle?
+a. 10
+b. 50
+*c. 100
+d. 1000
+
+37(5s) Quin és el país més gran del món per extensió?
+*a. Rússia
+b. Canadà
+c. Xina
+d. Estats Units
+
+38(5s) Quin instrument musical té tecles blanques i negres?
+a. Guitarra
+b. Flauta
+*c. Piano
+d. Violí
+
+39(5s) Qui va ser el primer president de la Generalitat de Catalunya moderna (1931)?
+*a. Francesc Macià
+b. Lluís Companys
+c. Josep Tarradellas
+d. Jordi Pujol
+
+40(5s) Quin és el prefix telefònic d'Espanya?
+a. +33
+*b. +34
+c. +44
+d. +49
+
+41(5s) Quina és la distància aproximada entre la Terra i el Sol?
+a. 1 milió de km
+b. 50 milions de km
+*c. 150 milions de km
+d. 500 milions de km
+
+42(5s) Qui és l'autor de la saga "Harry Potter"?
+*a. J.K. Rowling
+b. J.R.R. Tolkien
+c. C.S. Lewis
+d. Roald Dahl
+
+43(5s) Quin tipus de triangle té els tres costats iguals?
+a. Isòsceles
+b. Escalè
+*c. Equilàter
+d. Rectangle
+
+44(5s) Quina és la moneda oficial de la majoria de països de la UE?
+a. Dòlar
+b. Lliura
+*c. Euro
+d. Ien
+
+45(5s) Qui va proposar la Teoria de l'Evolució?
+a. Isaac Newton
+*b. Charles Darwin
+c. Marie Curie
+d. Stephen Hawking
+
+46(5s) Quin és el riu més llarg del món?
+a. Nil
+*b. Amazones
+c. Mississipí
+d. Iang-tsé
+
+47(5s) Com es diu la por irracional a les aranyes?
+*a. Aracnofòbia
+b. Claustrofòbia
+c. Agorafòbia
+d. Acrofòbia
+
+48(5s) Quin és l'idioma més parlat del món (com a llengua materna)?
+a. Anglès
+*b. Xinès mandarí
+c. Espanyol
+d. Hindi
+
+49(5s) En quina ciutat es troba la seu de la Unió Europea?
+a. París
+b. Berlín
+*c. Brussel·les
+d. Estrasburg
+
+50(5s) Quantes potes té una aranya?
+a. 4
+b. 6
+*c. 8
+d. 10
