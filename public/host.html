@@ -257,6 +257,35 @@
             padding: 30px;
         }
 
+        /* ANTI-CHEAT: Amagar estadístiques durant la pregunta */
+        .statistics-panel.hidden {
+            display: none;
+        }
+
+        .anti-cheat-message {
+            background: rgba(45, 27, 78, 0.6);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            display: none;
+        }
+
+        .anti-cheat-message.visible {
+            display: block;
+        }
+
+        .anti-cheat-message h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--color-accent);
+        }
+
+        .anti-cheat-message p {
+            font-size: 1.3rem;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
         .stat-box {
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -479,7 +508,7 @@
                     </div>
                 </div>
 
-                <div class="statistics-panel">
+                <div class="statistics-panel" id="statsPanel">
                     <h3 style="margin-bottom: 20px;">📊 Estadístiques en Directe</h3>
                     
                     <div class="stat-box">
@@ -502,6 +531,17 @@
                         <h4>✅ Han respost:</h4>
                         <div class="answered-list" id="answeredPlayersList"></div>
                     </div>
+                </div>
+
+                <!-- Anti-Cheat Message -->
+                <div class="anti-cheat-message" id="antiCheatMessage">
+                    <h3>🔒 Mode Anti-Trampes Activat</h3>
+                    <p>Les estadístiques estan ocultes durant la pregunta per garantir un joc honest.</p>
+                    <p style="margin-top: 20px;">📊 Les veuràs després de revelar la resposta!</p>
+                    <div style="margin-top: 30px; font-size: 3rem;">
+                        <span id="answeredCountCheat">0</span>/<span id="totalPlayersCheat">0</span>
+                    </div>
+                    <p style="margin-top: 10px; opacity: 0.8;">jugadors han respost</p>
                 </div>
             </div>
         </div>
