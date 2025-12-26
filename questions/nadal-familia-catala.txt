@@ -1,0 +1,299 @@
+01(15s) Quin personatge porta regals als nens el 6 de gener?
+a. Papa Noel
+b. El Tió de Nadal
+*c. Els Reis Mags
+d. El Pare Nadal
+
+02(15s) Què és el Tió de Nadal?
+a. Un arbre
+*b. Un tronc de fusta
+c. Una galleda
+d. Un pastís
+
+03(20s) Quina cançó es canta mentre es pica el Tió?
+a. El Noi de la Mare
+*b. Caga Tió
+c. Fum, Fum, Fum
+d. Els Pastorets
+
+04(15s) Quants Reis Mags són?
+a. Dos
+*b. Tres
+c. Quatre
+d. Cinc
+
+05(20s) Quina és la capital de Catalunya?
+a. Girona
+b. Tarragona
+*c. Barcelona
+d. Lleida
+
+06(15s) Quin dolç típic es menja per Nadal a Catalunya?
+a. Roscó de Reis
+*b. Torró
+c. Crema catalana
+d. Panellets
+
+07(20s) Com es diu la muntanya emblemàtica prop de Barcelona?
+a. Tibidabo
+*b. Montserrat
+c. Montseny
+d. Pedraforca
+
+08(15s) Quina celebració se celebra el 23 d'abril a Catalunya?
+a. Tots Sants
+b. La Mercè
+*c. Sant Jordi
+d. Sant Joan
+
+09(20s) Quin monument famós de Barcelona va dissenyar Antoni Gaudí?
+a. La Torre Eiffel
+*b. La Sagrada Família
+c. El Coliseu
+d. Big Ben
+
+10(15s) Quina dansa tradicional catalana es balla en rotllana?
+a. Flamenc
+*b. Sardana
+c. Vals
+d. Tango
+
+11(20s) Com es diu el castell humà típic de Catalunya?
+a. Torre humana
+*b. Castell
+c. Piràmide
+d. Monument
+
+12(15s) Quin és el plat tradicional català amb pa torrat i tomàquet?
+a. Escalivada
+*b. Pa amb tomàquet
+c. Esqueixada
+d. Trinxat
+
+13(20s) En quina ciutat catalana hi ha la Catedral del Mar?
+a. Tarragona
+*b. Barcelona
+c. Girona
+d. Lleida
+
+14(15s) Quina és la llengua oficial de Catalunya juntament amb el castellà?
+a. Francès
+b. Italià
+*c. Català
+d. Portuguès
+
+15(20s) Quin color NO és a la senyera catalana?
+a. Groc
+*b. Blanc
+c. Vermell
+d. Els dos colors són groc i vermell
+
+16(15s) Quina festa popular se celebra la nit del 23 de juny?
+a. Nadal
+*b. Sant Joan
+c. Cap d'Any
+d. Reis
+
+17(20s) Com es diuen els ninots que cremen a les Falles de València?
+a. Castells
+b. Gegants
+*c. Falles
+d. Trabucaires
+
+18(15s) Quin mar banya les costes de Catalunya?
+a. Mar Cantàbric
+b. Oceà Atlàntic
+*c. Mar Mediterrani
+d. Mar del Nord
+
+19(20s) Quina beguda típica catalana es fa amb cava, sucre i fruita?
+a. Sangria
+*b. Cava
+c. Vermut
+d. Orxata
+
+20(15s) A quina província catalana hi ha la Costa Brava?
+a. Barcelona
+*b. Girona
+c. Tarragona
+d. Lleida
+
+21(20s) Quin escriptor català va escriure "Tirant lo Blanc"?
+a. Jacint Verdaguer
+*b. Joanot Martorell
+c. Josep Pla
+d. Mercè Rodoreda
+
+22(15s) Com es diu el dia després de Nadal?
+a. Cap d'Any
+*b. Sant Esteve
+c. Reis
+d. Any Nou
+
+23(20s) Quina ciutat catalana és famosa pels seus festivals de música?
+a. Lleida
+*b. Barcelona
+c. Vic
+d. Manresa
+
+24(15s) Quants barres vermelles té la senyera?
+a. Tres
+*b. Quatre
+c. Cinc
+d. Sis
+
+25(20s) Quin parc famós de Barcelona té escultures de mosaic?
+a. Parc de la Ciutadella
+*b. Parc Güell
+c. Parc del Laberint
+d. Parc de Collserola
+
+26(15s) Quin dolç es menja per Tots Sants?
+a. Torró
+*b. Panellets
+c. Neules
+d. Coca
+
+27(20s) Com es diu el gegant més famós de Barcelona?
+a. Goliat
+*b. Gegant del Pi
+c. Gegant de Gràcia
+d. Gegant Major
+
+28(15s) Quina beguda calenta es pren amb ensaïmades?
+a. Cafè
+*b. Xocolata
+c. Té
+d. Llet
+
+29(20s) En quin any es van celebrar els Jocs Olímpics a Barcelona?
+a. 1988
+b. 1990
+*c. 1992
+d. 1996
+
+30(15s) Quin instrument musical s'utilitza per tocar sardanes?
+a. Guitarra
+b. Piano
+*c. Tenora
+d. Trompeta
+
+31(20s) Quina festa patronal se celebra a Barcelona al setembre?
+a. Sant Jordi
+*b. La Mercè
+c. Santa Eulàlia
+d. Sant Joan
+
+32(15s) Quin equip de futbol juga al Camp Nou?
+a. Real Madrid
+*b. FC Barcelona
+c. Espanyol
+d. Girona FC
+
+33(20s) Com es diu el teatre més famós de Barcelona a La Rambla?
+a. Teatre Nacional
+*b. Gran Teatre del Liceu
+c. Teatre Romea
+d. Teatre Poliorama
+
+34(15s) Quina salsa típica catalana es fa amb all i oli?
+a. Romesco
+*b. Allioli
+c. Sofregit
+d. Samfaina
+
+35(20s) Quin pintor català és famós pel surrealisme?
+a. Picasso
+b. Gaudí
+*c. Salvador Dalí
+d. Miró
+
+36(15s) En quina ciutat hi ha el Museu Dalí?
+a. Barcelona
+b. Girona
+*c. Figueres
+d. Cadaqués
+
+37(20s) Quin riu passa per Lleida?
+a. Llobregat
+b. Ter
+*c. Segre
+d. Ebre
+
+38(15s) Com es diu el recinte modernista de Sant Pau?
+a. Casa Batlló
+*b. Hospital de Sant Pau
+c. Palau de la Música
+d. Casa Milà
+
+39(20s) Quina cantant catalana va fer famosa "L'Estaca"?
+a. Joan Manuel Serrat
+*b. Lluís Llach
+c. Raimon
+d. Ovidi Montllor
+
+40(15s) Quin dolç típic és rodó i es menja per Reis?
+a. Torró
+*b. Tortell de Reis
+c. Coca de Sant Joan
+d. Mona de Pasqua
+
+41(20s) En quina ciutat catalana hi ha ruïnes romanes UNESCO?
+a. Barcelona
+b. Girona
+*c. Tarragona
+d. Lleida
+
+42(15s) Com es diu la processó de Setmana Santa més famosa?
+a. La Patum
+*b. Setmana Santa de Tarragona
+c. Els Pastorets
+d. La Mercè
+
+43(20s) Quina activitat es fa tradicionalment el dia de Sant Joan?
+a. Picar el Tió
+*b. Encendre fogueres
+c. Fer castells
+d. Ballar sardanes
+
+44(15s) Quin pastís es regala el dilluns de Pasqua?
+a. Tortell
+b. Roscó
+*c. Mona
+d. Coca
+
+45(20s) Com es diu el port marítim més important de Catalunya?
+a. Port de Tarragona
+*b. Port de Barcelona
+c. Port de Palamós
+d. Port de Blanes
+
+46(15s) Quina beguda típica es pren a l'estiu a Catalunya?
+a. Cafè
+*b. Orxata
+c. Té fred
+d. Llet
+
+47(20s) En quina comarca catalana hi ha el Montseny?
+a. Bages
+*b. Vallès Oriental
+c. Garrotxa
+d. Ripollès
+
+48(15s) Quin color tenen els vestits dels Castellers?
+a. Vermell
+b. Groc
+*c. Blanc
+d. Blau
+
+49(20s) Com es diu l'avinguda més famosa de Barcelona?
+a. Gran Via
+b. Passeig de Gràcia
+*c. La Rambla
+d. Diagonal
+
+50(15s) Quin plat català es fa amb bacallà i tomàquet?
+a. Suquet
+*b. Esqueixada
+c. Zarzuela
+d. Fideuà

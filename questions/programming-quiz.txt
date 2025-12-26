@@ -1,0 +1,59 @@
+01(15s) What does HTML stand for?
+a. Hyperlinks and Text Markup Language
+*b. Hyper Text Markup Language
+c. Home Tool Markup Language
+d. Hyperlinks Text Mode Language
+
+02(20s) Which company developed JavaScript?
+a. Microsoft
+*b. Netscape
+c. Oracle
+d. Sun Microsystems
+
+03(15s) What is the correct syntax to print a message in Python?
+a. console.log("Hello")
+*b. print("Hello")
+c. echo("Hello")
+d. printf("Hello")
+
+04(20s) What does CSS stand for?
+a. Computer Style Sheets
+b. Creative Style Sheets
+*c. Cascading Style Sheets
+d. Colorful Style Sheets
+
+05(15s) Which of these is a JavaScript framework?
+a. Django
+b. Laravel
+*c. React
+d. Flask
+
+06(20s) What is the primary purpose of Git?
+a. Web hosting
+*b. Version control
+c. Database management
+d. Code compilation
+
+07(15s) Which HTTP status code means "Not Found"?
+a. 200
+b. 301
+c. 500
+*d. 404
+
+08(20s) What does SQL stand for?
+a. Simple Question Language
+*b. Structured Query Language
+c. Standard Query Language
+d. Sequential Query Language
+
+09(15s) Which is a NoSQL database?
+a. MySQL
+b. PostgreSQL
+*c. MongoDB
+d. SQLite
+
+10(20s) What port does HTTP typically use?
+a. 21
+b. 22
+c. 443
+*d. 80

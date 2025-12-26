@@ -1,0 +1,299 @@
+01(15s) What color is Santa Claus's suit?
+a. Blue
+b. Green
+*c. Red
+d. Yellow
+
+02(15s) How many reindeer pull Santa's sleigh (including Rudolph)?
+a. 7
+*b. 9
+c. 10
+d. 12
+
+03(20s) In which country did the tradition of decorating Christmas trees originate?
+a. United States
+b. England
+*c. Germany
+d. France
+
+04(15s) What do you traditionally hang by the fireplace at Christmas?
+a. Hats
+*b. Stockings
+c. Gloves
+d. Scarves
+
+05(20s) Which popular Christmas song begins with "Dashing through the snow"?
+a. Rudolph the Red-Nosed Reindeer
+*b. Jingle Bells
+c. White Christmas
+d. Silent Night
+
+06(15s) What is Frosty the Snowman's nose made of?
+a. A carrot
+*b. A button
+c. A coal
+d. A stick
+
+07(20s) In the movie "Home Alone," where does Kevin's family go on vacation?
+a. London
+*b. Paris
+c. Rome
+d. New York
+
+08(15s) What do children typically leave out for Santa on Christmas Eve?
+a. Pizza and soda
+*b. Cookies and milk
+c. Sandwiches and juice
+d. Cake and coffee
+
+09(20s) Which reindeer has a red nose?
+a. Dasher
+b. Dancer
+*c. Rudolph
+d. Prancer
+
+10(15s) What date is Christmas Day celebrated?
+a. December 24th
+*b. December 25th
+c. December 26th
+d. January 1st
+
+11(20s) In "The Twelve Days of Christmas," what gift is given on the fifth day?
+a. Four calling birds
+*b. Five golden rings
+c. Six geese a-laying
+d. Seven swans a-swimming
+
+12(15s) What plant do people traditionally kiss under at Christmas?
+a. Holly
+*b. Mistletoe
+c. Ivy
+d. Pine
+
+13(20s) What is the name of the Grinch's dog?
+a. Max
+b. Buddy
+*c. Max
+d. Rex
+
+14(15s) What do you call the night before Christmas?
+a. Christmas Morning
+*b. Christmas Eve
+c. Christmas Day
+d. Boxing Day
+
+15(20s) Which ocean is the largest on Earth?
+a. Atlantic Ocean
+b. Indian Ocean
+c. Arctic Ocean
+*d. Pacific Ocean
+
+16(15s) How many sides does a snowflake have?
+a. 4
+*b. 6
+c. 8
+d. 10
+
+17(20s) What do you call a baby kangaroo?
+a. Cub
+b. Kid
+*c. Joey
+d. Pup
+
+18(15s) Which planet is known as the Red Planet?
+a. Venus
+*b. Mars
+c. Jupiter
+d. Saturn
+
+19(20s) How many colors are in a rainbow?
+a. 5
+b. 6
+*c. 7
+d. 8
+
+20(15s) What is the capital of France?
+a. London
+b. Rome
+*c. Paris
+d. Berlin
+
+21(20s) Which animal is the fastest on land?
+a. Lion
+b. Horse
+*c. Cheetah
+d. Gazelle
+
+22(15s) How many continents are there in the world?
+a. 5
+b. 6
+*c. 7
+d. 8
+
+23(20s) What is the largest mammal in the world?
+a. Elephant
+*b. Blue Whale
+c. Giraffe
+d. Hippopotamus
+
+24(15s) Which fruit is traditionally associated with teachers?
+*a. Apple
+b. Orange
+c. Banana
+d. Pear
+
+25(20s) In which sport would you perform a slam dunk?
+a. Soccer
+*b. Basketball
+c. Tennis
+d. Baseball
+
+26(15s) What is the main ingredient in bread?
+a. Sugar
+*b. Flour
+c. Rice
+d. Corn
+
+27(20s) Which Disney movie features a character named Simba?
+a. Aladdin
+*b. The Lion King
+c. Frozen
+d. Moana
+
+28(15s) How many legs does a spider have?
+a. 6
+*b. 8
+c. 10
+d. 12
+
+29(20s) What do bees produce?
+a. Milk
+*b. Honey
+c. Jam
+d. Syrup
+
+30(15s) Which shape has three sides?
+a. Square
+b. Circle
+*c. Triangle
+d. Rectangle
+
+31(20s) What is the largest organ in the human body?
+a. Heart
+b. Brain
+c. Liver
+*d. Skin
+
+32(15s) Which season comes after winter?
+a. Summer
+b. Autumn
+*c. Spring
+d. Fall
+
+33(20s) What do you call a group of fish swimming together?
+a. Herd
+b. Pack
+*c. School
+d. Flock
+
+34(15s) Which musical instrument has black and white keys?
+a. Guitar
+*b. Piano
+c. Drums
+d. Violin
+
+35(20s) In which country would you find the pyramids?
+a. Greece
+b. Mexico
+*c. Egypt
+d. China
+
+36(15s) What is H2O commonly known as?
+a. Air
+*b. Water
+c. Fire
+d. Earth
+
+37(20s) Which fairy tale character lost a glass slipper?
+a. Snow White
+b. Sleeping Beauty
+*c. Cinderella
+d. Rapunzel
+
+38(15s) How many hours are in a day?
+a. 12
+b. 20
+*c. 24
+d. 30
+
+39(20s) What do caterpillars turn into?
+a. Bees
+*b. Butterflies
+c. Birds
+d. Beetles
+
+40(15s) Which holiday celebrates the start of a new year?
+a. Christmas
+b. Halloween
+*c. New Year's Day
+d. Easter
+
+41(20s) What is the name of Mickey Mouse's girlfriend?
+a. Daisy
+*b. Minnie
+c. Clarabelle
+d. Goofy
+
+42(15s) Which fruit is yellow and curved?
+a. Apple
+b. Orange
+*c. Banana
+d. Grape
+
+43(20s) What do you use to take photographs?
+a. Telescope
+*b. Camera
+c. Microscope
+d. Binoculars
+
+44(15s) Which ocean creature has eight arms?
+a. Jellyfish
+b. Starfish
+*c. Octopus
+d. Crab
+
+45(20s) In which city is the Eiffel Tower located?
+a. London
+b. Rome
+*c. Paris
+d. Madrid
+
+46(15s) What is the opposite of hot?
+*a. Cold
+b. Warm
+c. Cool
+d. Lukewarm
+
+47(20s) Which superhero uses a lasso of truth?
+a. Superman
+b. Batman
+*c. Wonder Woman
+d. Spider-Man
+
+48(15s) How many days are in December?
+a. 28
+b. 30
+*c. 31
+d. 32
+
+49(20s) What is the name of Harry Potter's owl?
+a. Errol
+b. Pigwidgeon
+*c. Hedwig
+d. Fawkes
+
+50(15s) Which meal is typically eaten in the morning?
+*a. Breakfast
+b. Lunch
+c. Dinner
+d. Supper

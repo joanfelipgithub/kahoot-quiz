@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Professor - Quiz Battle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-bg: #1a0b2e;
+            --color-bg-light: #2d1b4e;
+            --color-primary: #ff6b9d;
+            --color-secondary: #4cc9f0;
+            --color-accent: #ffd23f;
+            --color-green: #26de81;
+            --color-text: #ffffff;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(135deg, var(--color-bg) 0%, #0d0221 100%);
+            color: var(--color-text);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .host-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--color-primary), #e73666);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        /* Lobby View */
+        .lobby-view {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .qr-section {
+            background: rgba(45, 27, 78, 0.6);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 107, 157, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .qr-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--color-accent);
+        }
+
+        #lobbyQRCode {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        .connection-url {
+            font-family: 'Courier New', monospace;
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .players-section {
+            background: rgba(45, 27, 78, 0.6);
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .players-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--color-secondary);
+        }
+
+        .player-count {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-accent);
+            margin-bottom: 20px;
+        }
+
+        .player-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .player-item {
+            background: rgba(76, 201, 240, 0.2);
+            padding: 12px 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--color-secondary);
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .controls {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn-start {
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-green), #20bf6b);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            box-shadow: 0 10px 30px rgba(38, 222, 129, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-start:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(38, 222, 129, 0.6);
+        }
+
+        /* Question View */
+        .question-view {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .question-display {
+            background: rgba(45, 27, 78, 0.6);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .question-number {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+        }
+
+        .timer-display {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: 'Fredoka', sans-serif;
+            color: var(--color-accent);
+        }
+
+        .timer-display.warning {
+            color: #ee4540;
+            animation: pulse 0.5s ease infinite;
+        }
+
+        .question-text {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+
+        .answers-preview {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .answer-preview {
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .answer-preview.red { background: linear-gradient(135deg, #ee4540, #c23616); }
+        .answer-preview.blue { background: linear-gradient(135deg, #2a9df4, #1e88e5); }
+        .answer-preview.yellow { background: linear-gradient(135deg, #ffd23f, #f9ca24); color: #2d2d2d; }
+        .answer-preview.green { background: linear-gradient(135deg, #26de81, #20bf6b); }
+
+        .answer-letter {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        .statistics-panel {
+            background: rgba(45, 27, 78, 0.6);
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--color-accent);
+        }
+
+        .answer-distribution {
+            margin-top: 20px;
+        }
+
+        .answer-bar {
+            margin-bottom: 15px;
+        }
+
+        .answer-bar-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .answer-bar-bg {
+            background: rgba(255, 255, 255, 0.1);
+            height: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .answer-bar-fill {
+            height: 100%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            font-weight: 600;
+        }
+
+        .answer-bar-fill.red { background: #ee4540; }
+        .answer-bar-fill.blue { background: #2a9df4; }
+        .answer-bar-fill.yellow { background: #ffd23f; color: #2d2d2d; }
+        .answer-bar-fill.green { background: #26de81; }
+
+        .players-answered {
+            margin-top: 20px;
+        }
+
+        .players-answered h4 {
+            margin-bottom: 10px;
+            color: var(--color-secondary);
+        }
+
+        .answered-list {
+            max-height: 300px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .answered-player {
+            background: rgba(38, 222, 129, 0.2);
+            padding: 8px 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--color-green);
+            font-size: 0.9rem;
+        }
+
+        /* Reveal View - similar to question but shows correct answer */
+        .reveal-indicator {
+            text-align: center;
+            padding: 20px;
+            background: rgba(38, 222, 129, 0.3);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .answer-preview.correct {
+            border: 4px solid var(--color-green);
+            box-shadow: 0 0 30px rgba(38, 222, 129, 0.6);
+        }
+
+        /* Ranking View */
+        .ranking-view {
+            background: rgba(45, 27, 78, 0.6);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .ranking-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .ranking-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .ranking-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 2px solid transparent;
+        }
+
+        .ranking-card.top3 {
+            border-color: #ffd700;
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .rank-position {
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-family: 'Fredoka', sans-serif;
+            min-width: 60px;
+        }
+
+        .rank-position.gold { color: #ffd700; }
+        .rank-position.silver { color: #c0c0c0; }
+        .rank-position.bronze { color: #cd7f32; }
+
+        .rank-info {
+            flex: 1;
+        }
+
+        .rank-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .rank-score {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 1200px) {
+            .lobby-view, .question-view {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="host-badge">👨‍🏫 VISTA PROFESSOR</div>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Quiz Battle - Control del Professor</h1>
+        </div>
+
+        <!-- Lobby Screen -->
+        <div id="lobbyScreen" class="screen active">
+            <div class="lobby-view">
+                <div class="qr-section">
+                    <h2>📱 Els estudiants escanegen aquí:</h2>
+                    <div id="lobbyQRCode"></div>
+                    <div class="connection-url" id="connectionUrl">Carregant...</div>
+                    <p style="opacity: 0.8; margin-top: 20px;">
+                        O escriure l'adreça al navegador
+                    </p>
+                </div>
+
+                <div class="players-section">
+                    <h2>Jugadors Connectats</h2>
+                    <div class="player-count">
+                        <span id="playerCountDisplay">0</span> jugadors
+                    </div>
+                    <div class="player-list" id="playerListDisplay"></div>
+                    
+                    <div class="controls">
+                        <button id="startGameBtn" class="btn-start">
+                            🎮 Començar el Joc
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Screen -->
+        <div id="questionScreen" class="screen">
+            <div class="question-view">
+                <div class="question-display">
+                    <div class="question-header">
+                        <div class="question-number" id="questionNumberDisplay">
+                            Pregunta 1/10
+                        </div>
+                        <div class="timer-display" id="timerDisplay">15</div>
+                    </div>
+                    <div class="question-text" id="questionTextDisplay">
+                        Carregant pregunta...
+                    </div>
+                    <div class="answers-preview" id="answersPreview">
+                        <!-- Answers will be inserted here -->
+                    </div>
+                </div>
+
+                <div class="statistics-panel">
+                    <h3 style="margin-bottom: 20px;">📊 Estadístiques en Directe</h3>
+                    
+                    <div class="stat-box">
+                        <div class="stat-label">Han respost</div>
+                        <div class="stat-value">
+                            <span id="answeredCount">0</span>/<span id="totalPlayers">0</span>
+                        </div>
+                    </div>
+
+                    <div class="answer-distribution">
+                        <h4 style="margin-bottom: 15px; color: var(--color-secondary);">
+                            Distribució de Respostes
+                        </h4>
+                        <div id="answerBars">
+                            <!-- Answer distribution bars -->
+                        </div>
+                    </div>
+
+                    <div class="players-answered">
+                        <h4>✅ Han respost:</h4>
+                        <div class="answered-list" id="answeredPlayersList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reveal Screen -->
+        <div id="revealScreen" class="screen">
+            <div class="question-view">
+                <div class="question-display">
+                    <div class="reveal-indicator">
+                        ✅ Resposta Correcta Revelada
+                    </div>
+                    <div class="question-text" id="revealQuestionText"></div>
+                    <div class="answers-preview" id="revealAnswersPreview">
+                        <!-- Answers with correct marked -->
+                    </div>
+                </div>
+
+                <div class="statistics-panel">
+                    <h3 style="margin-bottom: 20px;">📊 Resultats</h3>
+                    
+                    <div class="stat-box">
+                        <div class="stat-label">Respostes correctes</div>
+                        <div class="stat-value" style="color: var(--color-green);">
+                            <span id="correctCount">0</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <div class="stat-label">Respostes incorrectes</div>
+                        <div class="stat-value" style="color: #ee4540;">
+                            <span id="incorrectCount">0</span>
+                        </div>
+                    </div>
+
+                    <div class="answer-distribution">
+                        <h4 style="margin-bottom: 15px;">Distribució Final</h4>
+                        <div id="revealAnswerBars"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ranking Screen -->
+        <div id="rankingScreen" class="screen">
+            <div class="ranking-view">
+                <h2 class="ranking-title">📊 Classificació</h2>
+                <div style="text-align: center; font-size: 1.3rem; margin-bottom: 30px; opacity: 0.8;">
+                    Pregunta <span id="rankingQuestionNum">1</span>/<span id="rankingTotalNum">10</span>
+                </div>
+                <div class="ranking-grid" id="rankingGrid"></div>
+            </div>
+        </div>
+
+        <!-- Final Results Screen -->
+        <div id="finalScreen" class="screen">
+            <div class="ranking-view">
+                <h2 class="ranking-title">🏆 Resultats Finals</h2>
+                <div class="ranking-grid" id="finalRankingGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="host-client.js"></script>
+</body>
+</html>

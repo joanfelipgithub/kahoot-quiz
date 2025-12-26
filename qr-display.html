@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escaneja per Jugar - Quiz Battle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            animation: fadeIn 0.8s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .subtitle {
+            font-size: 2rem;
+            margin-bottom: 50px;
+            opacity: 0.9;
+        }
+        
+        #qrcode {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            margin: 0 auto 40px;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .instructions {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .or-divider {
+            font-size: 1.5rem;
+            margin: 30px 0;
+            opacity: 0.7;
+        }
+        
+        .url-box {
+            font-family: 'Courier New', monospace;
+            background: rgba(255,255,255,0.2);
+            padding: 20px 40px;
+            border-radius: 15px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        
+        .steps {
+            font-size: 1.3rem;
+            opacity: 0.8;
+            line-height: 2;
+        }
+        
+        .wifi-info {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.3);
+            padding: 15px 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            font-size: 1rem;
+            opacity: 0.6;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .subtitle { font-size: 1.5rem; }
+            .url-box { font-size: 1.5rem; padding: 15px 20px; }
+            .instructions { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wifi-info">
+        📶 WiFi necessari
+    </div>
+    
+    <div class="container">
+        <h1>📱 Escaneja per Jugar!</h1>
+        <p class="subtitle">Quiz Battle - Connecta't ara</p>
+        
+        <div id="qrcode"></div>
+        
+        <p class="instructions">
+            Obre la càmera del mòbil i escaneja ⬆️
+        </p>
+        
+        <div class="or-divider">━━━━━ o bé ━━━━━</div>
+        
+        <p class="instructions">Escriu aquesta adreça:</p>
+        <div class="url-box" id="url">Carregant...</div>
+        
+        <div class="steps">
+            1️⃣ Obre el navegador<br>
+            2️⃣ Escriu l'adreça de dalt<br>
+            3️⃣ Posa el teu nom<br>
+            4️⃣ A jugar! 🎮
+        </div>
+    </div>
+    
+    <div class="footer">
+        Preparat per jugar · Bon Nadal! 🎄
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        // Get IP from URL parameter or use window location
+        const urlParams = new URLSearchParams(window.location.search);
+        let serverIP = urlParams.get('ip');
+        const port = urlParams.get('port') || '8080';
+        
+        // If no IP provided, try to get current host
+        if (!serverIP) {
+            // Check if we're on localhost
+            if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                // Try to get LAN IP (this won't work perfectly, but it's a fallback)
+                serverIP = 'ESCRIU-IP-AQUI';
+            } else {
+                serverIP = window.location.hostname;
+            }
+        }
+        
+        const quizUrl = `http://${serverIP}:${port}`;
+        
+        // Display URL
+        document.getElementById('url').textContent = quizUrl;
+        
+        // Generate QR code only if we have a valid IP
+        if (serverIP !== 'ESCRIU-IP-AQUI') {
+            new QRCode(document.getElementById('qrcode'), {
+                text: quizUrl,
+                width: 350,
+                height: 350,
+                colorDark: '#667eea',
+                colorLight: '#ffffff',
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        } else {
+            document.getElementById('qrcode').innerHTML = 
+                '<div style="padding: 50px; color: #667eea; font-size: 1.5rem;">⚠️<br>Obre amb: qr-display.html?ip=LA_TEVA_IP</div>';
+        }
+    </script>
+</body>
+</html>

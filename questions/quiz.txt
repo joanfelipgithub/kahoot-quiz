@@ -1,0 +1,59 @@
+01(15s) Which is the capital of France?
+a. Madrid
+b. Barcelona
+c. Rome
+*d. Paris
+
+02(20s) What is the largest planet in our solar system?
+a. Earth
+b. Mars
+*c. Jupiter
+d. Saturn
+
+03(15s) Who painted the Mona Lisa?
+a. Vincent van Gogh
+b. Pablo Picasso
+*c. Leonardo da Vinci
+d. Michelangelo
+
+04(20s) What is the speed of light?
+a. 150,000 km/s
+b. 200,000 km/s
+*c. 300,000 km/s
+d. 400,000 km/s
+
+05(15s) Which programming language is known as the language of the web?
+a. Python
+b. Java
+*c. JavaScript
+d. C++
+
+06(20s) What year did World War II end?
+a. 1943
+*b. 1945
+c. 1946
+d. 1947
+
+07(15s) Which element has the chemical symbol 'O'?
+a. Gold
+*b. Oxygen
+c. Silver
+d. Iron
+
+08(20s) Who wrote "Romeo and Juliet"?
+*a. William Shakespeare
+b. Charles Dickens
+c. Mark Twain
+d. Jane Austen
+
+09(15s) What is the largest ocean on Earth?
+a. Atlantic Ocean
+b. Indian Ocean
+c. Arctic Ocean
+*d. Pacific Ocean
+
+10(20s) In which year was the first iPhone released?
+a. 2005
+*b. 2007
+c. 2009
+d. 2010

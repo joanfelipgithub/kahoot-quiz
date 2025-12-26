@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Battle 🎮</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Fredoka:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Lobby Screen -->
+    <div id="lobby" class="screen active">
+        <div class="lobby-container">
+            <div class="logo-section">
+                <h1 class="main-logo">Quiz Battle</h1>
+                <p class="tagline">Real-time classroom quiz</p>
+            </div>
+            
+            <div class="join-card">
+                <h2>Join the Game</h2>
+                <input 
+                    type="text" 
+                    id="playerName" 
+                    placeholder="Enter your name" 
+                    maxlength="20"
+                    autocomplete="off"
+                >
+                <button id="joinBtn" class="btn-primary">Join Now</button>
+                
+                <div class="player-count">
+                    <span id="playerCount">0</span> players connected
+                </div>
+            </div>
+            
+            <div class="players-list">
+                <h3>Players in Lobby</h3>
+                <div id="playersList"></div>
+            </div>
+            
+            <div class="teacher-control">
+                <button id="startGameBtn" class="btn-teacher">
+                    🎮 Start Game (Teacher)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Screen -->
+    <div id="question" class="screen">
+        <div class="question-header">
+            <div class="question-number">
+                Question <span id="currentQuestion">1</span>/<span id="totalQuestions">10</span>
+            </div>
+            <div class="timer-container">
+                <div class="timer" id="timer">15</div>
+                <div class="timer-bar">
+                    <div class="timer-bar-fill" id="timerBar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-container">
+            <h2 class="question-text" id="questionText">Loading question...</h2>
+        </div>
+        
+        <div class="answers-grid" id="answersGrid">
+            <button class="answer-btn red" data-answer="a">
+                <span class="answer-letter">A</span>
+                <span class="answer-text" id="answerA"></span>
+            </button>
+            <button class="answer-btn blue" data-answer="b">
+                <span class="answer-letter">B</span>
+                <span class="answer-text" id="answerB"></span>
+            </button>
+            <button class="answer-btn yellow" data-answer="c">
+                <span class="answer-letter">C</span>
+                <span class="answer-text" id="answerC"></span>
+            </button>
+            <button class="answer-btn green" data-answer="d">
+                <span class="answer-letter">D</span>
+                <span class="answer-text" id="answerD"></span>
+            </button>
+        </div>
+        
+        <div class="answer-feedback" id="answerFeedback"></div>
+    </div>
+
+    <!-- Reveal Screen -->
+    <div id="reveal" class="screen">
+        <div class="reveal-container">
+            <div class="result-badge" id="resultBadge"></div>
+            <h2 class="reveal-title" id="revealTitle">Answer Revealed!</h2>
+            <div class="correct-answer" id="correctAnswerDisplay"></div>
+            <div class="points-earned" id="pointsEarned"></div>
+        </div>
+    </div>
+
+    <!-- Ranking Screen -->
+    <div id="ranking" class="screen">
+        <div class="ranking-container">
+            <h2 class="ranking-title">📊 Leaderboard</h2>
+            <div class="ranking-progress">
+                Question <span id="rankingQuestion">1</span>/<span id="rankingTotal">10</span>
+            </div>
+            <div class="ranking-list" id="rankingList"></div>
+        </div>
+    </div>
+
+    <!-- Final Results Screen -->
+    <div id="final" class="screen">
+        <div class="final-container">
+            <h1 class="final-title">🏆 Game Over!</h1>
+            
+            <div class="podium" id="podium">
+                <!-- Top 3 will be generated here -->
+            </div>
+            
+            <div class="final-ranking">
+                <h3>Final Standings</h3>
+                <div class="final-list" id="finalList"></div>
+            </div>
+            
+            <div class="final-message">
+                <p>Great job everyone! 🎉</p>
+                <p class="small">Returning to lobby in 30 seconds...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Connection status overlay -->
+    <div id="connectionStatus" class="connection-status hidden">
+        <div class="status-content">
+            <div class="spinner"></div>
+            <p>Connecting to server...</p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
